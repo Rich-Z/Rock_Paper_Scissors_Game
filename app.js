@@ -47,11 +47,11 @@ function update(){
 
 function changeImageBasedOnNumber(number){
     if (number < 1){
-        document.getElementById("computer-image").src = "./images/rock.png";
+        document.getElementById("computer-image").src = "/Rock_Paper_Scissors_Game/images/rock.png";
     } else if (number < 2){
-        document.getElementById("computer-image").src = "./images/paper.jpg";
+        document.getElementById("computer-image").src = "/Rock_Paper_Scissors_Game/images/paper.jpg";
     } else {
-        document.getElementById("computer-image").src = "./images/scissors.png";
+        document.getElementById("computer-image").src = "/Rock_Paper_Scissors_Game/images/scissors.png";
     }
 }
 
