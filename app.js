@@ -46,6 +46,7 @@ function update(){
 }
 
 function changeImageBasedOnNumber(number){
+    console.log("./");
     if (number < 1){
         document.getElementById("computer-image").src = "/Rock_Paper_Scissors_Game/images/rock.png";
     } else if (number < 2){
