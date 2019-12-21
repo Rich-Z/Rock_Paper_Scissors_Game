@@ -50,7 +50,7 @@ function update(){
 
 function changeImageBasedOnNumber(number){
     if (number < 1){
-        console.log(document.getElementById("computer-image").src = rock_img.src);
+        document.getElementById("computer-image").src = rock_img.src;
     } else if (number < 2){
         document.getElementById("computer-image").src = paper_img.src;
     } else {
@@ -65,7 +65,6 @@ function convertToWord(letter){
 }
 
 function gameOutcome(userChoice){
-    console.log(userChoice);
     const choices = ['r', 'p', 's'];
     computerChoice = choices[finalChoiceNum];
     switch(userChoice + computerChoice) {
