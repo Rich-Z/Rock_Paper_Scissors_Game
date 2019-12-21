@@ -10,6 +10,9 @@ const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+const rock_img = document.getElementById('rock');
+const paper_img  = document.getElementById('paper');
+const scissors_img  = document.getElementById('scissors');
 
 let FPS = 30;
 let imgNum = 7;
@@ -47,11 +50,11 @@ function update(){
 
 function changeImageBasedOnNumber(number){
     if (number < 1){
-        document.getElementById("computer-image").src = "/Rock_Paper_Scissors_Game/images/rock.png";
+        console.log(document.getElementById("computer-image").src = rock_img.src);
     } else if (number < 2){
-        document.getElementById("computer-image").src = "/Rock_Paper_Scissors_Game/images/paper.jpg";
+        document.getElementById("computer-image").src = paper_img.src;
     } else {
-        document.getElementById("computer-image").src = "/Rock_Paper_Scissors_Game/images/scissors.png";
+        document.getElementById("computer-image").src = scissors_img.src;
     }
 }
 
