@@ -13,6 +13,7 @@ const scissors_div = document.getElementById("s");
 const rock_img = document.getElementById('rock');
 const paper_img  = document.getElementById('paper');
 const scissors_img  = document.getElementById('scissors');
+const computerMessage_p  = document.getElementById('computer-message');
 
 let FPS = 30;
 let imgNum = 7;
@@ -121,6 +122,7 @@ function main(){
             userChoice = "r";
         }
         active = true;
+        computerMessage_p.innerHTML = 'Computer chooses:'
         
     })
 
@@ -129,6 +131,7 @@ function main(){
             userChoice = "p";
         }
         active = true;
+        computerMessage_p.innerHTML = 'Computer chooses:'
     })
     
     scissors_div.addEventListener('click', function(){
@@ -136,5 +139,6 @@ function main(){
             userChoice = "s";
         }
         active = true;
+        computerMessage_p.innerHTML = 'Computer chooses:'
     })
 }
